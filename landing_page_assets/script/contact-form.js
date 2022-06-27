@@ -1,3 +1,5 @@
+const EDIT_EMAIL_HERE = "kurdiltelt@outlook.com";
+
 const CONTACT_FIRST_NAME_TEXT = document.querySelector('#contact-section .name-container .first-name-container span');
 const CONTACT_FIRST_NAME_INPUT = document.querySelector('#contact-section .name-container .first-name-container input');
 const CONTACT_LAST_NAME_TEXT = document.querySelector('#contact-section .name-container .last-name-container span');
@@ -135,7 +137,8 @@ function handleContactSubmit(e) {
         city: cityContent,
         zip: zipContent,
         message: msgContent,
-        origin: "Vamplitude.com'"
+        addressee: EDIT_EMAIL_HERE,
+        origin: "kurdilteltpatch.com"
     }
 
     postData(emailSite, emailObj)
