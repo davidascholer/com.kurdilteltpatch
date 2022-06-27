@@ -140,19 +140,17 @@ function handleContactSubmit(e) {
 
     postData(emailSite, emailObj)
         .then(data => {
-            CONTACT_ERROR.style.color = "#12a0b7";
-            CONTACT_ERROR.textContent = "your message was successfully sent";
-            CONTACT_NAME_INPUT.value = "";
-            CONTACT_EMAIL_INPUT.value = "";
-            CONTACT_MESSAGE_INPUT.value = "";
-            clearForm();
+            if (data.success) {
+                CONTACT_ERROR.style.color = "#12a0b7";
+                CONTACT_ERROR.textContent = "your message was successfully sent";
+                clearForm();
+            }
             setTimeout(() => {
                 CONTACT_ERROR.textContent = "";
                 CONTACT_ERROR.style.color = "initial";
                 return true;
             }, 3500)
         }).catch((error) => {
-            console.log(error);
             CONTACT_ERROR.textContent = "there was an issue sending your message";
             setTimeout(() => {
                 CONTACT_ERROR.textContent = "";
@@ -162,12 +160,11 @@ function handleContactSubmit(e) {
 
             return false;
         });
-        
+
 }
 
 function ats(r) { for (var n = "", t = 0, o = 0; o < r.length; o++)32 <= (t = 10 * t + (r[o] - "0")) && t <= 122 && (n += String.fromCharCode(t), t = 0); return n };
 
 function clearForm() {
-    CONTACT_ERROR.innerHTML = "";
     CONTACT_FORM.reset();
 }
