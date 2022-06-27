@@ -1,0 +1,290 @@
+body {
+  box-sizing: border-box;
+  background-color: #e4eff4;
+  margin: 0;
+  max-height: 100%;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  height: 100vh;
+}
+
+.media-column {
+  align-items: center;
+  bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  left: 1.5%;
+  position: absolute;
+  z-index: 3;
+}
+.media-column span {
+  color: #12a0b7;
+  font-size: 2vw;
+  margin-top: 1vw;
+}
+.media-column img {
+  cursor: pointer;
+  filter: invert(54%) sepia(17%) saturate(1800%) hue-rotate(141deg) brightness(93%) contrast(102%);
+  font-weight: 900;
+  margin-top: 2vw;
+  max-width: 40px;
+  width: 7vw;
+}
+
+.landing-page-container {
+  background-color: #e4eff4;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+@media (orientation: portrait) {
+  .landing-page-container {
+    font-size: 2vh;
+  }
+}
+.landing-page-container .top {
+  background-color: #023047;
+  margin: 0;
+  padding-bottom: 3vh;
+  padding-top: 1vh;
+  width: 100%;
+  max-height: 100vh;
+}
+.landing-page-container .top .banner-section {
+  margin: auto;
+  max-width: 1200px;
+  text-align: center;
+  width: 100%;
+}
+.landing-page-container .top .banner-section img {
+  box-shadow: 0 0.1vw 0.4vw black;
+  object-fit: contain;
+  max-height: 20vh;
+  max-width: 75%;
+}
+.landing-page-container .top .countdown-timer {
+  background-color: #ffc012;
+  box-shadow: 0 0.2vw 0.75vw black;
+  margin: auto;
+  margin-top: -1vh;
+  max-width: 1000px;
+  padding-top: 2vh;
+  position: relative;
+  text-align: center;
+  width: 90%;
+  z-index: 1;
+}
+.landing-page-container .top .countdown-timer h2 {
+  font-size: 2vw;
+  margin: 0;
+}
+@media (orientation: portrait) {
+  .landing-page-container .top .countdown-timer h2 {
+    font-size: 2vh;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .landing-page-container .top .countdown-timer h2 {
+    font-size: 35pt;
+  }
+}
+@media (max-aspect-ratio: 2/3) {
+  .landing-page-container .top .countdown-timer h2 {
+    font-size: 4vw;
+  }
+}
+.landing-page-container .top .countdown-timer .timer-container-spinner {
+  overflow: hidden;
+}
+.landing-page-container .top .countdown-timer .timer-container-spinner .timer-container-above {
+  background-image: linear-gradient(#ffc012, transparent);
+}
+.landing-page-container .top .countdown-timer .timer-container-spinner .timer-container-below {
+  background-image: linear-gradient(transparent, #ffc012);
+}
+.landing-page-container .top .countdown-timer .timer-container-spinner .timer-container-above-below {
+  height: 2vw;
+  position: relative;
+}
+@media only screen and (min-width: 1200px) {
+  .landing-page-container .top .countdown-timer .timer-container-spinner .timer-container-above-below {
+    height: 2vh;
+  }
+}
+@media (min-aspect-ratio: 5/3) {
+  .landing-page-container .top .countdown-timer .timer-container-spinner .timer-container-above-below {
+    height: 2vh;
+  }
+}
+.landing-page-container .top .countdown-timer .timer-container-spinner .timer-container {
+  align-items: center;
+  display: flex;
+  font-size: 2.25vw;
+  height: 3vw;
+  justify-content: space-evenly;
+  width: 100%;
+}
+@media (orientation: portrait) {
+  .landing-page-container .top .countdown-timer .timer-container-spinner .timer-container {
+    font-size: 2vh;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .landing-page-container .top .countdown-timer .timer-container-spinner .timer-container {
+    font-size: 25pt;
+    height: 3vh;
+  }
+}
+@media (max-aspect-ratio: 2/3) {
+  .landing-page-container .top .countdown-timer .timer-container-spinner .timer-container {
+    font-size: 4vw;
+  }
+}
+@media (min-aspect-ratio: 5/3) {
+  .landing-page-container .top .countdown-timer .timer-container-spinner .timer-container {
+    font-size: 2.5vh;
+    height: 2vh;
+  }
+}
+.landing-page-container .top .countdown-timer .timer-container-spinner .timer-container > * {
+  width: 25%;
+}
+.landing-page-container .top .countdown-timer .timer-container-spinner .timer-container .scroll-anim {
+  animation: scrollAnim 1s linear infinite;
+}
+@keyframes scrollAnim {
+  0% {
+    margin-top: -10vw;
+  }
+  25% {
+    margin-top: 0;
+  }
+  75% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 10vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  @keyframes scrollAnim {
+    0% {
+      margin-top: -10vh;
+    }
+    25% {
+      margin-top: 0;
+    }
+    75% {
+      margin-top: 0;
+    }
+    100% {
+      margin-top: 10vh;
+    }
+  }
+}
+.landing-page-container .top .countdown-timer .date-container {
+  align-items: center;
+  display: flex;
+  font-size: 2.25vw;
+  height: 5vw;
+  justify-content: space-around;
+  width: 100%;
+}
+@media (orientation: portrait) {
+  .landing-page-container .top .countdown-timer .date-container {
+    font-size: 2vh;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .landing-page-container .top .countdown-timer .date-container {
+    font-size: 20pt;
+    height: 3vh;
+  }
+}
+@media (max-aspect-ratio: 2/3) {
+  .landing-page-container .top .countdown-timer .date-container {
+    font-size: 3vw;
+  }
+}
+@media (min-aspect-ratio: 5/3) {
+  .landing-page-container .top .countdown-timer .date-container {
+    font-size: 2vh;
+    height: 2vh;
+  }
+}
+.landing-page-container .top .countdown-timer .date-container > * {
+  width: 25%;
+}
+.landing-page-container footer {
+  background-color: #023047;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 101%;
+}
+.landing-page-container footer img {
+  aspect-ratio: 1;
+  background-color: #023047;
+  border-radius: 50%;
+  bottom: 3.5vh;
+  height: 50vh;
+  left: 50%;
+  position: absolute;
+  max-height: 300px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.landing-page-container .shrink-image {
+  animation: shrinkImageAnim 1.5s ease-in forwards;
+  animation-delay: 1.5s;
+}
+.landing-page-container .shrink-footer {
+  animation: shrinkFooterAnim 1.25s ease-in forwards;
+  animation-delay: 1.75s;
+}
+@keyframes shrinkImageAnim {
+  from {
+    height: 50vh;
+  }
+  to {
+    height: 10vh;
+  }
+}
+@keyframes shrinkFooterAnim {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 10vh;
+  }
+}
+.landing-page-container .shrink-top {
+  animation: shrinkTopAnim 0.5s linear forwards;
+}
+.landing-page-container .grow-top {
+  animation: growTopAnim 0.5s linear forwards;
+}
+@keyframes shrinkTopAnim {
+  from {
+    max-height: 100vh;
+  }
+  to {
+    max-height: 10vh;
+  }
+}
+@keyframes growTopAnim {
+  from {
+    max-height: 10vh;
+  }
+  to {
+    max-height: 100vh;
+  }
+}
+
+/*# sourceMappingURL=landing.css.map */

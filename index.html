@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./landing_page_assets/styles/landing.css" rel="stylesheet">
+    <link href="./landing_page_assets/styles/contact_form.css" rel="stylesheet">
+    <title>Kurdil-Telt Patch</title>
+    <!--favicion links and meta-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./landing_page_assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./landing_page_assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./landing_page_assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./landing_page_assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./landing_page_assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./landing_page_assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/landing_page_assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <aside class="media-column">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.kurdilteltpatch.com%2F&amp;src=sdkpreparse">
+        <img src="./landing_page_assets/img/media/facebook.svg" alt="facebook"/>
+    </a>
+        <img src="./landing_page_assets/img/media/instagram.svg" alt="instagram"/>
+        <img src="./landing_page_assets/img/media/twitter.svg" alt="twitter"/>
+        <img src="./landing_page_assets/img/media/linkedin.svg" alt="linkedin"/>
+        <span>share</span>
+    </aside>
+    <div class="landing-page-container">
+        <div class="top">
+            <div class="banner-section">
+                <img src="./landing_page_assets/img/banner.png" alt="banner" />
+            </div>
+
+            <section class="countdown-timer">
+                <h2>Countdown to the 2022 Municipal Election:</h2>
+                <div class="timer-container-spinner">
+                    <div class="timer-container-above timer-container-above-below"></div>
+                    <div class="timer-container">
+                        <span class="days">
+                            <div class="number">0</div>
+                        </span>
+                        <span class="hours">
+                            <div class="number">0</div>
+                        </span>
+                        <span class="minutes">
+                            <div class="number">0</div>
+                        </span>
+                        <span class="seconds">
+                            <div class="number">0</div>
+                        </span>
+                    </div>
+                    <div class="timer-container-below timer-container-above-below"></div>
+                </div>
+                <div class="date-container">
+                    <span class="days">
+                        <div class="text">DAYS</div>
+                    </span>
+                    <span class="hours">
+                        <div class="text">HOURS</div>
+                    </span>
+                    <span class="minutes">
+                        <div class="text">MINUTES</div>
+                    </span>
+                    <span class="seconds">
+                        <div class="text">SECONDS</div>
+                    </span>
+                </div>
+            </section>
+        </div>
+        <section class="middle-container">
+            <section id="contact-section">
+                <div class="text-container">
+                    <h1 class="text">Share YOUR Vision</h1>
+                    <h2 class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </h2>
+                </div>
+                <form id="BoomForm-Name-element-9bdc182f-548b-467b-82bb-bfac18395196" class="contact-form" action="#">
+                    <div class="form-container">
+                        <div class="form-left">
+                            <div class="name-container">
+                                <div class="first-name-container">
+                                    <input name="first-name" type="name" value="">
+                                    <span class="input-empty">First Name</span>
+                                </div>
+                                <div class="last-name-container">
+                                    <input name="last-name" type="name" value="">
+                                    <span class="input-empty">Last Name</span>
+                                </div>
+                            </div>
+                            <div class="email-outer-container">
+                                <div class="email-container">
+                                    <input name="email" type="email" value="">
+                                    <span>Email</span>
+                                </div>
+                            </div>
+                            <div class="address-container">
+                                <div class="city-container">
+                                    <input name="city" type="city" value="">
+                                    <span class="input-empty">City</span>
+                                </div>
+                                <div class="zip-container">
+                                    <input name="zip" type="zip" value="">
+                                    <span class="input-empty">Zip Code</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-right">
+                            <div class="textarea-container">
+                                <textarea class="text-input" name="message" type="textarea"></textarea>
+                            </div>
+                            <button type="submit" onclick=handleContactSubmit(event)>
+                                <span>send</span>
+                            </button>
+                            <span class="error" style="display:block;width:100%;"></span>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </section>
+        <footer class="shrink-footer">
+            <img src="./landing_page_assets/img/logo_300.png" alt="logo" class="shrink-image"/>
+        </footer>
+    </div>
+    <script src="./landing_page_assets/script/countdown-timer.js"></script>
+    <script src="./landing_page_assets/script/contact-form.js"></script>
+    <script src="./landing_page_assets/script/landing.js"></script>
+</body>
+
+</html>
